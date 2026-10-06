@@ -1,0 +1,108 @@
+{
+  "testedAt": "2026-10-06T19:59:06.720Z",
+  "checks": [
+    "Exact source text; channels; no-answer removal; HTTPS-only links; estimated panel times; deduplication and 1,000-event cap",
+    "Live browser: explicit CORS failure, useful independently loaded working-agent list",
+    "Real captured API messages render within 10 seconds (1377 ms)",
+    "60-second polling; unchanged updatedAt avoids re-fetch; exact research template skipped; request staggering",
+    "Changed updatedAt re-fetches exactly one job without reloading",
+    "All four channels, exact agent filtering, no-results state and clear filters",
+    "Long-text disclosure, verdict details, source links, long/short PICKS chips",
+    "Keyboard skip link, channel activation, visible focus CSS",
+    "Research message and PICKS contrast passes axe",
+    "Light/dark themes; 1440/1024/820/400/320px reflow; zero axe violations in both desktop themes; reduced-motion mascot pause",
+    "200% root font-size text enlargement reflows at 400px",
+    "Failed refresh retains last received messages and announces reconnecting",
+    "Theme persists across reload; healthy empty state; manual retry restores real captured messages",
+    "No application exceptions or failed local assets; relative /preview/ export loads"
+  ],
+  "screenshots": [
+    "artifacts/live-desktop.jpg",
+    "artifacts/keyboard-focus.jpg",
+    "artifacts/chat-desktop.jpg",
+    "artifacts/chat-dark.jpg",
+    "artifacts/chat-mobile-dark.jpg",
+    "artifacts/chat-mobile.jpg"
+  ],
+  "contrast": {
+    "light": {
+      "body": [
+        "rgb(24, 32, 43)",
+        "rgb(255, 255, 255)"
+      ],
+      "secondary": [
+        "rgb(95, 105, 120)",
+        "rgb(255, 255, 255)"
+      ],
+      "link": [
+        "rgb(47, 85, 212)",
+        "rgb(255, 255, 255)"
+      ],
+      "accepted": [
+        "rgb(255, 255, 255)",
+        "rgb(29, 127, 79)"
+      ],
+      "accent": [
+        "rgb(47, 85, 212)",
+        "rgb(230, 236, 252)"
+      ]
+    },
+    "dark": {
+      "body": [
+        "rgb(227, 232, 239)",
+        "rgb(22, 27, 35)"
+      ],
+      "secondary": [
+        "rgb(161, 173, 190)",
+        "rgb(22, 27, 35)"
+      ],
+      "link": [
+        "rgb(134, 162, 255)",
+        "rgb(22, 27, 35)"
+      ],
+      "accepted": [
+        "rgb(255, 255, 255)",
+        "rgb(29, 127, 79)"
+      ],
+      "accent": [
+        "rgb(134, 162, 255)",
+        "rgb(38, 51, 85)"
+      ]
+    }
+  },
+  "errors": [],
+  "firstMessageMs": 1377,
+  "live": {
+    "messages": 0,
+    "status": "Reconnecting\u2026",
+    "browserErrors": [
+      "Access to fetch at 'https://api.imd.fun/jobs?limit=30' from origin 'http://127.0.0.1:46653' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'https://api.imd.fun/research/panels' from origin 'http://127.0.0.1:46653' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  "lightAxe": [],
+  "fonts": {
+    "display": true,
+    "body": true,
+    "mono": true
+  },
+  "darkAxe": [],
+  "contrastRatios": {
+    "light": {
+      "body": 16.4,
+      "secondary": 5.56,
+      "link": 6.23,
+      "accepted": 5.0,
+      "accent": 5.27
+    },
+    "dark": {
+      "body": 14.04,
+      "secondary": 7.6,
+      "link": 7.1,
+      "accepted": 5.0,
+      "accent": 5.11
+    }
+  }
+}
